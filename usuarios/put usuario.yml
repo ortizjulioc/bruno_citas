@@ -1,18 +1,18 @@
 info:
-  name: post usuario
+  name: put usuario
   type: http
-  seq: 1
+  seq: 3
 
 http:
-  method: POST
-  url: http://localhost:3000/api/usuarios
+  method: PUT
+  url: http://localhost:3000/api/usuarios/1e8d2c29-4ae7-4e8c-875a-61efe8b84cf9
   body:
     type: json
     data: |-
       {
         "email": "juan.perez@example1.com",
         "password": "PasswordSegura123!",
-        "nombre": "Juan",
+        "nombre": "Juan actualixadoo",
         "apellido": "Pérez",
         "telefono": "+18095551234"
       }

@@ -1,0 +1,25 @@
+info:
+  name: post usuario
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/api/usuarios
+  body:
+    type: json
+    data: |-
+      {
+        "email": "juan.perez@example2.com",
+        "password": "PasswordSegura123!",
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "telefono": "+18095551234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

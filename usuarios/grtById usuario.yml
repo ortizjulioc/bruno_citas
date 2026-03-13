@@ -1,0 +1,25 @@
+info:
+  name: grtById usuario
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:3000/api/usuarios/fcd1b122-6585-4145-9774-f2bb71f33f1f
+  body:
+    type: json
+    data: |-
+      {
+        "email": "juan.perez@example1.com",
+        "password": "PasswordSegura123!",
+        "nombre": "Juan actualixadoo",
+        "apellido": "Pérez",
+        "telefono": "+18095551234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

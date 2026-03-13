@@ -1,0 +1,25 @@
+info:
+  name: delete usuario
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:3000/api/usuarios/9a1c75e1-d4ae-4067-961c-e9aa977faa58
+  body:
+    type: json
+    data: |-
+      {
+        "email": "juan.perez@example1.com",
+        "password": "PasswordSegura123!",
+        "nombre": "Juan actualixadoo",
+        "apellido": "Pérez",
+        "telefono": "+18095551234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
