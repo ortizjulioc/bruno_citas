@@ -1,0 +1,35 @@
+info:
+  name: Post Usuario-rol
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/usuario-rol
+  params:
+    - name: search
+      value: admin
+      type: query
+      disabled: true
+    - name: search
+      value: comun
+      type: query
+      disabled: true
+    - name: search
+      value: sistema
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "usuarioId":"b6d8c276-0f4c-40b3-8507-3a3ce948c61a",
+        "rolId": "c88ad153-4fa1-49c3-8810-2a816dd1e716"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: http://localhost:3000/api/usuarios/9a1c75e1-d4ae-4067-961c-e9aa977faa58
+  url: http://localhost:3000/api/usuarios/25a142ad-2061-422a-85f6-129d2110d70a
   body:
     type: json
     data: |-

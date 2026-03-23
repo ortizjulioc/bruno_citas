@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/api/usuarios/fcd1b122-6585-4145-9774-f2bb71f33f1f
+  url: http://localhost:3000/api/usuarios/25a142ad-2061-422a-85f6-129d2110d70a
   body:
     type: json
     data: |-

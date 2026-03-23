@@ -1,0 +1,22 @@
+info:
+  name: GetById roles
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:3000/api/roles/dece587f-ba62-42af-a06e-8e6b3de7ae32
+  body:
+    type: json
+    data: |-
+      {
+        "nombre":"user actulizado",
+        "descripcion": "usuario comun"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

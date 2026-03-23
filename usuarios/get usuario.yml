@@ -6,6 +6,11 @@ info:
 http:
   method: GET
   url: http://localhost:3000/api/usuarios
+  params:
+    - name: search
+      value: amado
+      type: query
+      disabled: true
   body:
     type: json
     data: "\n"

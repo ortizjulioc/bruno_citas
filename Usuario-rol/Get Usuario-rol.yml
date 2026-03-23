@@ -1,0 +1,32 @@
+info:
+  name: Get Usuario-rol
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:3000/api/usuario-rol
+  params:
+    - name: usuarioId
+      value: b6d8c276-0f4c-40b3-8507-3a3ce948c61a
+      type: query
+      disabled: true
+    - name: rolId
+      value: c88ad153-4fa1-49c3-8810-2a816dd1e716
+      type: query
+      disabled: true
+    - name: usuario
+      value: amado
+      type: query
+      disabled: true
+    - name: search
+      value: admin
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
