@@ -6,6 +6,9 @@ info:
 http:
   method: GET
   url: http://localhost:3000/api/usuarios
+  headers:
+    - name: Authorization
+      value: Bearear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0OGYxNDY1NS1lMDk4LTQ2MzAtOWMxZC0yM2Y3ZmFkODZmOGMiLCJlbWFpbCI6InRlc3RAZy5jb20iLCJub21icmUiOiJlbXByZXNhIiwiYXBlbGxpZG8iOiJzcmwiLCJuZWdvY2lvSWQiOiI1NmMxODQ0MC0wM2VlLTRhMGYtYWM5Mi00YjcxOTJiNzNkMTMiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3Nzc5ODg1ODgsImV4cCI6MTc3ODAzMTc4OH0.ZoDThx6-31NruTJaDiw817D4Umg_6Xn-h1b-gncsQS4
   params:
     - name: search
       value: amado

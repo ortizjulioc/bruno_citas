@@ -1,0 +1,27 @@
+info:
+  name: LOGIN
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:3000/api/auth/login
+  params:
+    - name: search
+      value: amado
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: |
+      {
+        "email":"test@g.com",
+        "password":"123456"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
